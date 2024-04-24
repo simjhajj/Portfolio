@@ -1,0 +1,467 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4ff; /* Light purple */
+    color: #333;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Dark mode styles */
+.dark-mode body {
+    background-color: #333; /* Dark gray */
+    color: #fff; /* White text */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #6d597a; /* Dark purple */
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 10px 20px;
+    justify-content: flex-end; /* Align links to the right */
+}
+
+.nav li {
+    margin-left: 20px; /* Add margin between links */
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ccc;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero-section {
+    background-color: #9a83b7; /* Light purple */
+    color: #fff;
+    padding: 80px 0; /* Adjust vertical padding */
+    position: relative; /* For absolute positioning */
+}
+
+.hero-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 250px; /* Increase the width */
+    height: 250px; /* Increase the height */
+    border-radius: 50%; /* Maintain circular shape */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: transform 0.5s ease; /* Add transition for hover effect */
+}
+
+.profile-image:hover {
+    transform: rotate(360deg); /* Rotate on hover */
+}
+
+/* Contact Me Button */
+.contactMe {
+    padding: 12px 24px; /* Add padding */
+    font-size: 18px; /* Set font size */
+    background-color: #6d597a; /* Dark purple */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.contactMe:hover {
+    background-color: #7a5a8e; /* Darken background color on hover */
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px; /* Add margin between button and social icons */
+    text-align: left; /* Center-align social icons */
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin-right: 10px; /* Add spacing between icons */
+    color: #000000; /* Match icon color with the theme */
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #eeeeee; /* Change color on hover */
+}
+
+
+/* About Section */
+/* About Section */
+.about-section {
+    background-color: #f4f4f4; /* Light gray */
+    padding: 80px 0;
+    text-align: center;
+    color: #333; /* Dark gray text color */
+}
+
+.about-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    line-height: 1.6;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .about-section h2 {
+        font-size: 30px;
+    }
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+
+/* Portfolio Section */
+
+.project-info h3 a,
+.project-info a {
+    color: #6d597a; /* Purple color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-info h3 a:hover,
+.project-info a:hover {
+    color: #7a5a8e; /* Darker purple on hover */
+}
+
+.project {
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Enlarge the project container on hover */
+}
+
+.portfolio-section {
+    background-color: #9a83b7; /* Dark purple */
+    padding: 80px 0;
+}
+
+.portfolio-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project {
+    background-color: #f4f4f4; /* Light gray background for projects */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Skills Section */
+.myskills {
+    padding: 80px 0;
+}
+
+.myskills .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.myskills h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mySkills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.skillsPic {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skillsPic img {
+    display: block;
+    margin: 0 auto 10px; /* Center the image vertically */
+}
+
+.skillsPic h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Add hover effect */
+.skillsPic:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+/* Education Section */
+.education {
+    background-color: #9a83b7;
+    padding: 80px 0;
+}
+
+.education .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add some padding to the sides */
+}
+
+.education h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333; /* Dark text color */
+}
+
+.ed1 {
+    background-color: #fff; /* White background for content */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Drop shadow effect */
+}
+
+.ed1 h3 {
+    font-size: 24px;
+    color: #333; /* Dark text color */
+}
+
+.ed1 p {
+    font-size: 18px;
+    color: #555; /* Medium gray text color */
+    margin-bottom: 20px;
+}
+
+.ed1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ed1 ul li {
+    font-size: 16px;
+    color: #666; /* Light gray text color */
+    margin-bottom: 10px;
+}
+
+/* Add some spacing between list items */
+.ed1 ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #6d597a; /* Dark purple */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav-footer {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-footer li {
+    margin-right: 20px;
+}
+
+.nav-footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-footer a:hover {
+    color: #ccc;
+}
+
+/* Dark styles */
+/* Dark mode styles */
+.dark-mode{
+    background-color:#2e2e2e;  /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.dark-mode body {
+    background-color:#2e2e2e;  /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.dark-mode nav {
+    background-color: #323232; /* Darker background color for about section */
+}
+
+.dark-mode .header {
+    background-color: #121212; /* Darker background color for about section */
+}
+
+/* Update specific section styles for dark mode */
+.dark-mode .hero-section {
+    background-color: #121212; /* Darker background color for hero section */
+}
+
+.dark-mode .social-icons i {
+    color:  #654a85; /* Darker background color for about section */
+}
+
+.dark-mode .social-icons i:hover {
+    color:  #cfbbe7; /* Darker background color for about section */
+}
+
+.dark-mode .about-section {
+    background-color:  #323232; /* Darker background color for about section */
+}
+
+.dark-mode .portfolio-section {
+    background-color: #121212; /* Darker background color for portfolio section */
+}
+
+.dark-mode .project {
+    background-color: #363636; /* Darker background color for portfolio section */
+}
+
+.dark-mode .education {
+    background-color: #121212; /* Darker background color for portfolio section */
+}
+
+.dark-mode .ed1 {
+    background-color: #363636; /* Darker background color for portfolio section */
+}
+
+.dark-mode .ed1 ul li {
+    color: white; /* Darker background color for portfolio section */
+}
+
+.dark-mode footer {
+    background-color: #323232;/* Darker background color for portfolio section */
+}
+/* Update text color for specific elements in dark mode */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4  {
+    color: #b270d3; /* Light purple text color */
+}
+
+.dark-mode p {
+    color: #fff; /* White text color */
+}
